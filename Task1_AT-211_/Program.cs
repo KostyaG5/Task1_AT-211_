@@ -5,12 +5,18 @@
 {
     internal class Program
     {
+        private static double SumofTwoRealNumbers(double number1, double number2)
+        {
+               return number1 + number2;
+        }
+
+
         static void Main(string[] args)
         {
 
             Random random = new ();
             double number1 = random.NextDouble()*50-25 , number2 = random.NextDouble() * 50 - 25;
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine($"{number1} + {number2} = {SumofTwoRealNumbers(number1, number2)}") ;
         }
     }
 }
